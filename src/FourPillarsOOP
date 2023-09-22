@@ -1,0 +1,26 @@
+/*
+   Encapsulation
+In order to preserve the integrity of the data, encapsulation is a technique that prevents a user from
+directly altering the data members or variables of a class. For example, the data type in the field in
+the user class is private, so the user can only access it via getters and setters.
+
+  Inheritence
+A method of obtaining attributes from another class with features you share is through inheritance.
+It enables us to lessen code duplication and improve code reusability. The situation, in which
+a child inherits the traits of its parent, is sometimes referred to as a child-parent relationship.
+For example, in the UserRepository interface, this class extends the jpa repository, so this class has
+access to all the methods that the jpa repository has.
+
+  Abstraction
+Abstraction is a strategy for giving users only the information they need by obscuring extraneous or
+irrelevant information about an entity. This aids in lowering user-end operational complexity.
+For example, at the service layer there is a separation between UserService and UserServiceImpl,
+so that we can use each service method through the UserService interface without needing to know
+the business logic of each method.
+
+  Polymorphism
+"Many forms" is what polymorphism means. By virtue of its name, it is a feature that enables you to
+carry out an activity in a variety of ways. for example, Update UserDTO's constructor uses static
+polymorphism, the constructor has the same name but different parameters, so instantiating can be
+done in two constructors with different parameters
+*/
